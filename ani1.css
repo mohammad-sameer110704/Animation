@@ -1,0 +1,80 @@
+body {
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+}
+
+.tri1{
+  position: absolute;
+  width: 5cm;
+  height: 5cm;
+  border: .4cm solid red;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  animation: ani1 4s linear infinite;
+}
+
+@keyframes ani1{
+  0%{rotate: 0deg; color: red;}
+  25%{rotate: -90deg; color: orange;}
+  50%{rotate: -180deg; color: tomato;}
+  75%{rotate: -270deg;}
+  100%{rotate: -360deg;}
+}
+
+.tri2{
+  position: absolute;
+  width: 5cm;
+  height: 5cm;
+  border: .4cm solid yellow;
+  position: absolute;
+  rotate: 45deg;
+  top: 30%;
+  left: 40%;
+  animation: ani2 4s linear infinite;
+}
+
+@keyframes ani2{
+  0%{rotate: 0deg;}
+  25%{rotate: 90deg;}
+  50%{rotate: 180deg;}
+  75%{rotate: 270deg;}
+  100%{rotate: 360deg;}
+}
+
+.tri3{
+  position: absolute;
+  width: 4cm;
+  height: 4cm;
+  border: .4cm dashed orange;
+  position: absolute;
+  top: 33.5%;
+  left: 41.5%;
+  border-radius: 50%;
+  animation: ani3 3s linear infinite;
+
+}
+
+@keyframes ani3{
+  0%{rotate: 0deg; color: orange;opacity: 1;}
+  50%{rotate: 180deg; color: yellow; opacity: 0.5;}
+  100%{rotate: 360deg; color: red;opacity: 0;}
+}
+.load{
+  position: absolute;
+  top: 45%;
+  left: 42.8%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .90cm;
+  animation-delay: 1s;
+  animation: la 3s linear infinite;
+}
+@keyframes la{
+  0%{opacity: 0.5; color: red; scale: 1;}
+  50%{opacity: 1; color: orange; scale: .5;}
+  100%{opacity: 0.25; color: yellow;scale: .0;}
+}
